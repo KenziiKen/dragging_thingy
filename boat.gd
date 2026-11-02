@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	sq.visible = false
 	txt.text = "You won!"
-	await get_tree().create_timer(1.5).timeout
+	await get_tree().create_timer(1).timeout
 	txt.text = "No more game"
 	await get_tree().create_timer(1.5).timeout
 	
